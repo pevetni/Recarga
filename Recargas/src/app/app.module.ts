@@ -11,11 +11,13 @@ import { ComponentePrincipalComponent } from './componente-principal/componente-
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { ComponenteRecargasComponent } from './componente-recargas/componente-recargas.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentePrincipalComponent
+    ComponentePrincipalComponent,
+    ComponenteRecargasComponent
   ],
   imports: [
     BrowserModule,
