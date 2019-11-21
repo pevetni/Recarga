@@ -13,12 +13,18 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { ComponenteRecargasComponent } from './componente-recargas/componente-recargas.component';
 import {MatButtonModule} from '@angular/material/button';
+import { ComponentDatosComponent } from './component-datos/component-datos.component';
+import { ComponentePagoComponent } from './componente-pago/componente-pago.component';
+import { ComponenteRespuestaComponent } from './componente-respuesta/componente-respuesta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentePrincipalComponent,
-    ComponenteRecargasComponent
+    ComponenteRecargasComponent,
+    ComponentDatosComponent,
+    ComponentePagoComponent,
+    ComponenteRespuestaComponent
   ],
   imports: [
     BrowserModule,
