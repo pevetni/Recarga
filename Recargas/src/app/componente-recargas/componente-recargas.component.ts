@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-componente-recargas',
@@ -7,9 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ComponenteRecargasComponent implements OnInit {
 
-  constructor() { }
+  constructor(private common:CommonService) { }
 
   ngOnInit() {
+    this.common.sendMessage('Recargas');
   }
 
 }

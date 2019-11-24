@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CommonService } from '../services/common.service';
 
 @Component({
   selector: 'app-componente-pago',
@@ -8,9 +9,10 @@ import { Router } from '@angular/router';
 })
 export class ComponentePagoComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private common:CommonService) { }
 
   ngOnInit() {
+    this.common.sendMessage('Datos del pago');
   }
 
   callFunction(){
