@@ -12,20 +12,30 @@
             </div>
             <div class="col-sm">
                     <form>
-                            <label style="color:#5092D8;">Cédula</label>
-                            <input type="text" class="redondeado" placeholder="Ingrese número de cédula" maxlength="9" name="cédula" id="cédula">
-                            <br/><br/>
-                            <label style="color:#5092D8;">Monto a pagar</label>
-                            <input type="text" class="redondeado" placeholder="Ingrese monto" maxlength="11" name="monto" id="monto">
-                            <br/><br/>
-                            <label style="color:#5092D8;" >Tipo de cuenta</label><br/><br/>
-                            <input type="radio" name="boton" value="1"><a>Ahorro</a><br/>
-                            <input type="radio" name="boton" value="2"><a>Corriente</a>
-                            <br/><br/>
-                            <label style="color:#5092D8;" >Contraseña</label>
-                            <input type="password" class="redondeado" placeholder="Ingrese contraseña" name="contraseña" id="contraseña">
-                            <br/><br/>
-                            <a class="boton_personalizado" href="http://localhost:4200/#/respuesta">Recargar</a>
+
+                            <div class="example-container">
+                                        <mat-form-field>
+                                                <input matInput placeholder="Nro. Cedula">
+                                        </mat-form-field>
+                                        <mat-form-field>
+                                                <input matInput placeholder="Monto a pagar">
+                                        </mat-form-field>
+
+                                        <mat-radio-group aria-label="Seleccione un tipo de cuenta">
+                                                <mat-radio-button value="1">Ahorro</mat-radio-button>
+                                                <mat-radio-button value="2">Corriente</mat-radio-button>
+                                        </mat-radio-group>
+
+                                        <mat-form-field>
+                                                <input matInput type="password" placeholder="Contraseña">
+                                        </mat-form-field>
+
+                                        <br/><br/>
+                                        <button mat-raised-button color="primary" (click)="callFunction()">Recargar</button>
+
+                                </div>
+                            
+                                                      
                             
                         </form>
             </div>

@@ -5,17 +5,21 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ComponentePrincipalComponent } from './componente-principal/componente-principal.component';
+import { ComponentDatosComponent } from './component-datos/component-datos.component';
+import { ComponentePagoComponent } from './componente-pago/componente-pago.component';
+import { ComponenteRespuestaComponent } from './componente-respuesta/componente-respuesta.component';
+import { ComponenteRecargasComponent } from './componente-recargas/componente-recargas.component';
 
 /** Material Componentes */
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
-import { ComponenteRecargasComponent } from './componente-recargas/componente-recargas.component';
 import {MatButtonModule} from '@angular/material/button';
-import { ComponentDatosComponent } from './component-datos/component-datos.component';
-import { ComponentePagoComponent } from './componente-pago/componente-pago.component';
-import { ComponenteRespuestaComponent } from './componente-respuesta/componente-respuesta.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {MatRadioModule} from '@angular/material/radio';
+
 
 @NgModule({
   declarations: [
@@ -33,7 +37,10 @@ import { ComponenteRespuestaComponent } from './componente-respuesta/componente-
     MatToolbarModule,
     MatIconModule,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRadioModule
   ],
   providers: [],
   bootstrap: [AppComponent]

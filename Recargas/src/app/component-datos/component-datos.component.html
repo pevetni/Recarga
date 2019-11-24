@@ -4,19 +4,24 @@
         </div>
         <div class="row">
             <div class="col-sm">
-                <img class="f-center" src="./../../assets/imagenes/movistar.png" width="250" alt="Consultas">
+                <img class="f-center" [src]="urlImagen" width="250" alt="Consultas">
             </div>
             <div class="col-sm">
                     <form>
-                            <label style="color:#5092D8;">ID/N° Teléfono</label>
-                            <input type="text" class="redondeado" placeholder="Ingrese número de teléfono" maxlength="11" name="teléfono" id="teléfono">
+
+                        <div class="example-container">
+                            <mat-form-field>
+                                <input matInput placeholder="ID/N° Teléfono">
+                            </mat-form-field>
+                            <mat-form-field>
+                                <input matInput placeholder="Monto">
+                            </mat-form-field>
+
                             <br/><br/>
-                            <label style="color:#5092D8;">Monto</label>
-                            <input type="text" class="redondeado" placeholder="Combo con montos precargados" maxlength="11" name="monto" id="monto">
-                            <br/><br/>
-                            <br/><br/>
-                            <a class="boton_personalizado" href="http://localhost:4200/#/pago">Siguiente</a>
-                        </form>
+                            <button mat-raised-button color="primary" (click)="callFunction()">Recargar</button>
+
+                        </div>
+                     </form>
             </div>
         </div>
     </div>

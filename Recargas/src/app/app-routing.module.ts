@@ -9,13 +9,13 @@ import { ComponenteRespuestaComponent } from './componente-respuesta/componente-
 const routes: Routes = [
   { path: '', component: ComponentePrincipalComponent },
   { path: 'recargas', component: ComponenteRecargasComponent },
-  { path: 'datos', component: ComponentDatosComponent },
+  { path: 'datos/:tipo', component: ComponentDatosComponent },
   { path: 'pago', component: ComponentePagoComponent },
   { path: 'respuesta', component: ComponenteRespuestaComponent },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes,{ useHash: true })],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
 export class AppRoutingModule {}
